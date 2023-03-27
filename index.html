@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+<!---google-fonts------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!--------------------bootstrap--------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+ 
+  <!--css file-->
+  <link rel="stylesheet" href="tindog2.css">
+  <!-- javascript--------->
+  
+
+
+  <!-----fontawesome-->
+  <script src="https://kit.fontawesome.com/3ad915e7ea.js" crossorigin="anonymous"></script>
+ 
+  <!-----------------------bootstrap script---------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</head>
+
+<!---BODY SECTION--->
+<body><!--class="container-fluid"--->
+  <section id="title">
+    
+<!--navbar-->
+<div class="container container-fluid">
+  <nav class="navbar navbar-expand-lg" id="navbarmenu" >
+    <a class="brand navbar-brand" href="">tindog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+     <div class="collapse navbar-collapse">
+ <ul class="menu navbar-nav ms-auto">
+    <li class="nav-item">
+     <a class="nav-link" href="#footer">contact</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#pricing">pricing</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="#cta">download</a>
+    </li>
+ </ul>
+ </nav>
+ <div class="row" id="col">
+   <div class="col2 col-lg-6">
+    <h1>Meet new and interesting dogs nearby.</h1>
+      <button class=" btn btn-lg btn-dark" type="button"><i class="btn1 fa-brands fa-apple">
+      </i>Download</button>
+      <button class=" btn btn-lg btn-outline-light" type="button"><i class="btn2 fa-brands fa-google-play">
+      </i>Download</button>
+   </div>
+   <div id="phon" class="col-lg-6">
+    <img class="iphon" src="images/iphone6.png" alt="iphone-mockup">
+    </div>
+ </div>
+</div>
+
+     
+ 
+ 
+ <!--Title-->
+ 
+
+  </section>
+  <!-------Features------->
+  <section id="features">
+<div class="row" id="col4">
+  <div class="col-lg-4">
+    <i class="fas fa-sharp fa-solid fa-circle-check fa-4x"></i>
+    <h3>Easy to use.</h3>
+    <p>So easy to use, even your dog could do it.</p>
+  </div>
+  <div class="col-lg-4">
+    <i class="fas fa-solid fa-bullseye fa-4x"></i>
+    <h3>Elite Clientele</h3>
+    <p>We have all the dogs, the greatest dogs.</p>
+  </div>
+  <div class="col-lg-4">
+    <i class="fas icon fa-sharp fa-solid fa-heart fa-4x"></i>
+    <h3>Guaranteed to work.</h3>
+    <p>Find the love of your dog's life or your money back.</p>
+  </div>
+</div>
+</section>
+
+<!-- Testimonials -->
+
+<section id="testimonials">
+  <!---data-bs-ride=false means it is not going to be auto played-->
+  <!---carousel slide means the contain is slideable after hitting the prev or next btn-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<!---the above div is the main div-->
+    <!---div=carousel-inner means this div contains the DIV which contains "content" which
+       we want to slide-->
+    <div class="carousel-inner">
+
+      <!--here in carousel-item we put our sliding content-->
+      <div class="carousel-item active">
+        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+        <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+        <em>Pebbles, New York</em>
+      </div>
+      <div class="carousel-item"><!--this class "carousel-item" is imp to put image into the slide show-->
+        <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help,
+          they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+      </div>
+    <!--  <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>-->
+    </div>
+
+    <!---BUTTONS--->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+     data-bs-slide="prev">
+     <!---very very imp....
+      * the data-bs-target of button should be same as the id of main div--->
+      <!---here the attribute "type" or "role" is very imp
+        by this attribute we can define the role of button to any element--->
+
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <!---"aria-hidden" basically means that when a visually impaired person comes 
+        across to your website,the website has function called screen reading means 
+        whatever the content is on the screen is read out by website,for skiping "prev"
+        or "next" button "aria-hidden='true'" tag is used
+        which eventually makes your website more friendly for person with disability--->
+      <span class="visually-hidden">Previous</span>
+      <span class="sr-only">previous</span>
+      <!---"sr-only" means the screen reader will read out 'previous' as user enables the
+         screen reading option -->
+
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+     data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+  <!--  -->
+
+</section>
+
+<!-- Press -->
+
+<section id="press">
+  <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+  <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+  <img  class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+  <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+</section>
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+   <!--<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>--> 
+    <div class="passage"><h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p></div>
+
+      <div class="row text-center" id="row">
+     <!----------card no 1----------->
+
+      <!--"col-lg-4" gives a 3 blocks in large screen which is similar to
+          "single row & three column-->
+    <!---"col-md-6" gives a 2 blocks in medium(tablet) screen = single row & two column-->
+    <div class="card1 col-lg-4 col-md-6">
+      <div class="card"> 
+        <div class="card-header">
+           <h3>Chihuahua</h3>
+         </div>
+         <div class="card-body">
+           <h2>Free</h2>
+           <p>5 Matches Per Day</p>
+           <p>10 Messages Per Day</p>
+           <p>Unlimited App Usage</p>
+         </div>
+          <button class="signup1 btn btn-lg btn-outline-primary" type="button">Sign Up</button>
+         
+       </div>
+   </div>
+    
+  <!----------card no 2-------------->
+  <div class="card2 col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+      <div class="card-body">
+        <h2>$49 / mo</h2>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+      </div>
+     
+        <button class="btn btn-lg btn-primary" id="signup2" type="button">Sign Up</button>
+     
+    </div>
+  </div>
+
+     <!----------card no 3-------------->
+     <div class="card3 col-lg-4 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>Mastiff</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Pirority Listing</p>
+          <p>Unlimited Matches</p>
+          <p>Unlimited Messages</p>
+          <p>Unlimited App Usage</p>
+        </div>
+       
+          <button class="btn btn-lg btn-primary" id="signup3" type="button">Sign Up</button>
+          
+        </div>
+     </div>
+    </div>
+  </div>
+
+  </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta">
+
+      <h3 class="call">Find the True Love of Your Dog's Life Today.</h3>
+      <!--<button class="" type="button">Download</button>
+      <button type="button">Download</button>-->
+      <button type="button" class="btn btn-dark btn-lg"><i class="btn1 fa-brands fa-apple"></i>Download</button>
+<button type="button" class="btn btn-light btn-lg"><i class="btn2 fa-brands fa-google-play"></i>Download</button>
+  
+    </section>
+  
+    <!-- Footer -->
+  
+    <footer id="footer">
+  <span><i class="fa-brands fa-twitter"></i></span>
+  <span><i class="fa-brands fa-facebook-f"></i></span>
+  <span><i class="fa-brands fa-instagram"></i></span>
+  <span><i class="fa-solid fa-envelope"></i></span>
+      <p class="copyright">© Copyright 2023 TinDog</p>
+  
+    </footer>
+
+    <!---------------------------CODE REFRACTORING------------------------------------------------------------->
+  <!--
+   1. READABILITY
+   2.MODULARITY
+   3.EFFICIENCY
+   4.LENGTH
+   always try to be 
+   DRY 
+   D-do not
+   R-repeat
+   Y-yourself 
+1.hierarchical structure:-
+syntax:-
+parent .its children{
+
+}
+here the space between two parts is compulsory.
+2.Combined selectors:-
+syntax:- 
+itschildren.parent{
+
+}
+here space between two parts is not compulsory
+
+******SELECTORS PRIORITY****************
+INLINE CSS STYLING
+^
+|
+ID
+^
+|
+CLASS
+^
+| 
+ELEMENT
+
+  -->
+
+
+
+  <script src="Introduction.js"></script>
+
+</body>
